@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Motion & UI Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">✦</span>
+      <span class="logo-text">Velox Motion</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#cards">Showcase</a>
+      <a href="#stats">Performance</a>
+    </nav>
+    <button class="btn btn-primary" id="demoBtn">Explore Effects</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Modern Web Animations</span>
+      <h1>Ultra-Smooth UI & Motion Experience</h1>
+      <p>Exploring high-performance CSS transforms, hardware-accelerated animations, and responsive interactive web interfaces.</p>
+
+      <div class="hero-actions">
+        <button class="btn btn-glow" id="ctaBtn">Interactive Demo</button>
+        <button class="btn btn-outline" id="toggleTheme">Toggle Effect Mode</button>
+      </div>
+    </div>
+
+    <!-- Animated Hero Showcase Widget -->
+    <div class="hero-visual">
+      <div class="glass-card main-hero-card">
+        <div class="card-badge">60 FPS Render</div>
+        <div class="card-icon">⚡</div>
+        <h3>Hardware Acceleration</h3>
+        <p>Utilizing CSS transform and opacity properties for silky-smooth 60fps animations across all screen sizes.</p>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="features" id="features">
+    <div class="section-title">
+      <h2>Animation Techniques</h2>
+      <p>Clean, efficient layout dynamics built with standard web technologies</p>
+    </div>
+
+    <div class="grid">
+      <div class="glass-card feature-card">
+        <div class="icon-box">✨</div>
+        <h3>Micro-Interactions</h3>
+        <p>Subtle feedback animations on hover, focus, and click events that give interfaces a responsive feel.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <div class="icon-box">🎨</div>
+        <h3>Glassmorphism UI</h3>
+        <p>Translucent card design with subtle backdrop filters, glowing borders, and smooth hover elevation.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <div class="icon-box">🚀</div>
+        <h3>Fluid Physics</h3>
+        <p>Custom cubic-bezier timing functions that replicate natural acceleration and deceleration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cards Section -->
+  <section class="showcase" id="cards">
+    <div class="section-title">
+      <h2>Interactive Card Showcase</h2>
+      <p>Hover over cards to view smooth 3D tilt and elevation effects</p>
+    </div>
+
+    <div class="card-container">
+      <div class="interactive-card" data-tilt>
+        <div class="card-content">
+          <span class="card-tag">Design System</span>
+          <h4>Fluid Layouts</h4>
+          <p>Adaptive grids and responsive containers that transition smoothly on layout changes.</p>
+        </div>
+      </div>
+
+      <div class="interactive-card" data-tilt>
+        <div class="card-content">
+          <span class="card-tag">Performance</span>
+          <h4>Optimized Painting</h4>
+          <p>Zero layout thrashing by avoiding reflow-triggering CSS properties during animations.</p>
+        </div>
+      </div>
+
+      <div class="interactive-card" data-tilt>
+        <div class="card-content">
+          <span class="card-tag">Accessibility</span>
+          <h4>Reduced Motion</h4>
+          <p>Respects system motion preferences seamlessly using CSS media queries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
