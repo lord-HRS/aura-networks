@@ -1,7 +1,4 @@
-# aura-networks
-A modern, high-performance community portal template featuring cinematic motion UI, floating scroll parallax, member registration workflows, and background audio controls.
-
-# AURA NETWORKS — Community Collaboration Portal
+# AURA NETWORKS — Community Portal
 
 A modern, high-performance community portal web application built with HTML5, CSS3, and JavaScript. Features cinematic motion UI, luxury gold color grading, floating parallax elements, role-based member sign-in, membership application workflows, and Web Audio background music controls.
 
