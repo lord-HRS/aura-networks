@@ -21,4 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Spec Dashboard Tab Switcher
-   
+    const specTabs = document.querySelectorAll('.spec-tab');
+  const specContents = document.querySelectorAll('.spec-content');
+
