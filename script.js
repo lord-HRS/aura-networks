@@ -13,5 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const videoPlayOverlay = document.getElementById('videoPlayOverlay');
   const allianceTrailer = document.getElementById('allianceTrailer');
 
-  
+    if (videoPlayOverlay && allianceTrailer) {
+    videoPlayOverlay.addEventListener('click', () => {
+      videoPlayOverlay.style.display = 'none';
+      allianceTrailer.play();
+    });
+  }
+
+  // Spec Dashboard Tab Switcher
    
