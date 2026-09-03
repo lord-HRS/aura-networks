@@ -1,9 +1,4 @@
-# AURA-NETWORKS 
-
-
-
-
-# AURA NETWORKS — Community Portal
+# AURA NETWORKS — Community Collaboration Portal
 
 A modern, high-performance community portal web application built with HTML5, CSS3, and JavaScript. Features cinematic motion UI, luxury gold color grading, floating parallax elements, role-based member sign-in, membership application workflows, and Web Audio background music controls.
 
@@ -20,11 +15,18 @@ A modern, high-performance community portal web application built with HTML5, CS
 - **Interactive Spec Dashboard**: Real-time tab switcher for performance, security, and governance metrics.
 - **Member Application & Sign-In Modals**: User registration workflows and ID sign-in interfaces.
 
----
 
-## 🚀 Quick Start
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/aura-networks.git
-   cd aura-networks
+## 🛠️ Project Structure
+
+```text
+aura-networks/
+├── index.html          # Main application semantic HTML structure
+├── styles.css          # Design system, CSS grid, variables, & animations
+├── script.js           # Parallax, modal handlers, spec tabs, & audio controls
+├── don_srk_thame.mp3   # Ambient soundtrack audio file
+├── README.md           # Documentation
+└── LICENSE             # MIT License
+```
+
+
