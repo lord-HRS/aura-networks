@@ -3,124 +3,293 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aura-Networks</title>
+  <title>AURA NETWORKS — Exclusive Community Alliance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Orbitron:wght@600;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Ambient background glow -->
-  <div class="bg-blur bg-blur-1"></div>
-  <div class="bg-blur bg-blur-2"></div>
 
-  <!-- Header -->
+  <!-- Cinematic Welcome Overlay -->
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-card">
+      <span class="cyber-badge">AURA NETWORKS</span>
+      <h1 class="welcome-title">ENTER COMMUNITY NETWORK</h1>
+      <p>Tap below to launch experience with soundtrack.</p>
+      <button class="btn btn-cyber btn-lg" id="enterSiteBtn">⚡ ENTER THE PORTAL</button>
+    </div>
+  </div>
+
+  <!-- Floating Parallax Scroll Elements -->
+  <div class="floating-scroll-elem elem-1" data-speed="0.2">
+    <span class="elem-badge">✦ AURA NETWORKS</span>
+  </div>
+  <div class="floating-scroll-elem elem-2" data-speed="-0.15">
+    <span class="elem-icon">💎</span>
+  </div>
+  <div class="floating-scroll-elem elem-3" data-speed="0.25">
+    <span class="elem-code">AURA // 2026</span>
+  </div>
+
+  <!-- Ambient Glow Blobs & Gold Grid Background -->
+  <div class="cyber-grid"></div>
+  <div class="bg-glow bg-glow-gold"></div>
+  <div class="bg-glow bg-glow-emerald"></div>
+  <div class="bg-glow bg-glow-purple"></div>
+
+  <!-- Vertical Accent Label -->
+  <div class="vertical-accent">AURA NETWORKS • EXCLUSIVE MEMBER COMMUNITY</div>
+
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <span class="logo-icon">✦</span>
-      <span class="logo-text">Velox Motion</span>
+      <span class="logo-icon">✨</span>
+      <span class="logo-text">AURA NETWORKS</span>
     </div>
     <nav class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#cards">Showcase</a>
-      <a href="#stats">Performance</a>
+      <a href="#trailer">TRAILER</a>
+      <a href="#chapters">CHAPTERS</a>
+      <a href="#mission">MISSION</a>
+      <a href="#benefits">BENEFITS</a>
     </nav>
-    <button class="btn btn-primary" id="demoBtn">Explore Effects</button>
+    <div class="nav-actions">
+      <button class="btn btn-outline" id="navLoginBtn">MEMBER SIGN IN</button>
+      <button class="btn btn-gold" id="navApplyBtn">APPLY NOW</button>
+    </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Giant Typography Watermark -->
   <section class="hero">
-    <div class="hero-content">
-      <span class="badge">Modern Web Animations</span>
-      <h1>Ultra-Smooth UI & Motion Experience</h1>
-      <p>Exploring high-performance CSS transforms, hardware-accelerated animations, and responsive interactive web interfaces.</p>
-
-      <div class="hero-actions">
-        <button class="btn btn-glow" id="ctaBtn">Interactive Demo</button>
-        <button class="btn btn-outline" id="toggleTheme">Toggle Effect Mode</button>
-      </div>
+    <div class="hero-bg-text">AURA</div>
+    <span class="gold-badge">AN EXCLUSIVE FELLOWSHIP OF PURPOSE</span>
+    <h1 class="hero-title">AURA NETWORKS — WHERE STILLNESS REVEALS UNSEEN POWER</h1>
+    <p class="hero-desc">An elite collaborative ecosystem connecting dedicated individuals through peer support, shared mastery, and transparent recognition.</p>
+    
+    <div class="hero-buttons">
+      <button class="btn btn-gold btn-lg" id="heroApplyBtn">JOIN AURA NETWORKS</button>
+      <a href="#trailer" class="btn btn-outline btn-lg">WATCH TRAILER</a>
     </div>
 
-    <!-- Animated Hero Showcase Widget -->
-    <div class="hero-visual">
-      <div class="glass-card main-hero-card">
-        <div class="card-badge">60 FPS Render</div>
-        <div class="card-icon">⚡</div>
-        <h3>Hardware Acceleration</h3>
-        <p>Utilizing CSS transform and opacity properties for silky-smooth 60fps animations across all screen sizes.</p>
-        <div class="progress-bar">
-          <div class="progress-fill"></div>
+    <!-- Chapter Quick Nav Bar -->
+    <div class="chapter-nav">
+      <div class="chapter-step active" data-step="01">
+        <span class="step-num">01</span>
+        <span class="step-label">THE FOUNDATION</span>
+      </div>
+      <div class="chapter-step" data-step="02">
+        <span class="step-num">02</span>
+        <span class="step-label">PEER ALLIANCE</span>
+      </div>
+      <div class="chapter-step" data-step="03">
+        <span class="step-num">03</span>
+        <span class="step-label">SKILL MASTERY</span>
+      </div>
+      <div class="chapter-step" data-step="04">
+        <span class="step-num">04</span>
+        <span class="step-label">VERIFIED TRUST</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cinematic Trailer Section -->
+  <section class="info-section" id="trailer">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-tag">CINEMATIC PREVIEW</span>
+        <h2>AURA NETWORKS ANTHEM TRAILER</h2>
+        <p>Experience the vision, atmosphere, and philosophy of our community alliance</p>
+      </div>
+
+      <div class="video-container-card">
+        <div class="video-wrapper">
+          <video id="allianceTrailer" poster="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80" loop controls>
+            <source src="don_srk_thame.mp3" type="audio/mp3">
+            Your browser does not support HTML5 video preview.
+          </video>
+          <div class="video-overlay-play" id="videoPlayOverlay">
+            <div class="play-circle">▶</div>
+            <span>WATCH CINEMATIC TRAILER</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features Grid -->
-  <section class="features" id="features">
-    <div class="section-title">
-      <h2>Animation Techniques</h2>
-      <p>Clean, efficient layout dynamics built with standard web technologies</p>
-    </div>
-
-    <div class="grid">
-      <div class="glass-card feature-card">
-        <div class="icon-box">✨</div>
-        <h3>Micro-Interactions</h3>
-        <p>Subtle feedback animations on hover, focus, and click events that give interfaces a responsive feel.</p>
+  <!-- Horizontal Scroll Cards / Chapter Showcase -->
+  <section class="info-section" id="chapters">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-tag">CHAPTER SECTIONS</span>
+        <h2>EXPLORE ALLIANCE MODULES</h2>
+        <p>Hover over cards to view smooth 3D tilt and luxury gold lighting</p>
       </div>
 
-      <div class="glass-card feature-card">
-        <div class="icon-box">🎨</div>
-        <h3>Glassmorphism UI</h3>
-        <p>Translucent card design with subtle backdrop filters, glowing borders, and smooth hover elevation.</p>
-      </div>
-
-      <div class="glass-card feature-card">
-        <div class="icon-box">🚀</div>
-        <h3>Fluid Physics</h3>
-        <p>Custom cubic-bezier timing functions that replicate natural acceleration and deceleration.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Cards Section -->
-  <section class="showcase" id="cards">
-    <div class="section-title">
-      <h2>Interactive Card Showcase</h2>
-      <p>Hover over cards to view smooth 3D tilt and elevation effects</p>
-    </div>
-
-    <div class="card-container">
-      <div class="interactive-card" data-tilt>
-        <div class="card-content">
-          <span class="card-tag">Design System</span>
-          <h4>Fluid Layouts</h4>
-          <p>Adaptive grids and responsive containers that transition smoothly on layout changes.</p>
+      <div class="carousel-container">
+        <div class="cyber-card carousel-card" data-tilt>
+          <div class="card-num">01 / CHAPTER</div>
+          <div class="card-icon">🏛️</div>
+          <h3>THE AURA GATE</h3>
+          <p>Open access points for individuals seeking community mentorship, guidance, and mutual escalation.</p>
+          <div class="card-link">DISCOVER MODULE &rarr;</div>
         </div>
-      </div>
 
-      <div class="interactive-card" data-tilt>
-        <div class="card-content">
-          <span class="card-tag">Performance</span>
-          <h4>Optimized Painting</h4>
-          <p>Zero layout thrashing by avoiding reflow-triggering CSS properties during animations.</p>
+        <div class="cyber-card carousel-card" data-tilt>
+          <div class="card-num">02 / CHAPTER</div>
+          <div class="card-icon">📜</div>
+          <h3>BORROWED SCENERY</h3>
+          <p>Exchanging expertise across technical, legal, and strategic disciplines in a transparent ecosystem.</p>
+          <div class="card-link">DISCOVER MODULE &rarr;</div>
         </div>
-      </div>
 
-      <div class="interactive-card" data-tilt>
-        <div class="card-content">
-          <span class="card-tag">Accessibility</span>
-          <h4>Reduced Motion</h4>
-          <p>Respects system motion preferences seamlessly using CSS media queries.</p>
+        <div class="cyber-card carousel-card" data-tilt>
+          <div class="card-num">03 / CHAPTER</div>
+          <div class="card-icon">👑</div>
+          <h3>THE GOLDEN CROWN</h3>
+          <p>Peer recognition system based on verifiable help, ratings, and milestone star rewards.</p>
+          <div class="card-link">DISCOVER MODULE &rarr;</div>
+        </div>
+
+        <div class="cyber-card carousel-card" data-tilt>
+          <div class="card-num">04 / CHAPTER</div>
+          <div class="card-icon">⚡</div>
+          <h3>LANTERN LIGHT</h3>
+          <p>Collaborative task board where members assign and fulfill real-world projects with full transparency.</p>
+          <div class="card-link">DISCOVER MODULE &rarr;</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Velox Motion Showcase — Standard Web Design & Animation </p>
-  </footer>
+  <!-- Interactive Spec Dashboard Widget -->
+  <section class="info-section" id="showcase">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-tag">PLATFORM SPECIFICATIONS</span>
+        <h2>INTERACTIVE SPEC DASHBOARD</h2>
+        <p>Toggle tabs below to preview real-time platform capabilities</p>
+      </div>
+
+      <div class="spec-widget">
+        <div class="spec-tabs">
+          <button class="spec-tab active" data-tab="performance">PERFORMANCE</button>
+          <button class="spec-tab" data-tab="security">SECURITY</button>
+          <button class="spec-tab" data-tab="governance">GOVERNANCE</button>
+        </div>
+
+        <div class="spec-content active" id="tab-performance">
+          <div class="spec-grid">
+            <div class="spec-metric">
+              <span class="metric-value">60 FPS</span>
+              <span class="metric-label">GPU Render Speed</span>
+            </div>
+            <div class="spec-metric">
+              <span class="metric-value">0.1s</span>
+              <span class="metric-label">Response Time</span>
+            </div>
+            <div class="spec-metric">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Transparent Logs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="spec-content hidden" id="tab-security">
+          <div class="spec-grid">
+            <div class="spec-metric">
+              <span class="metric-value">SSL/TLS</span>
+              <span class="metric-label">Encryption Protocol</span>
+            </div>
+            <div class="spec-metric">
+              <span class="metric-value">RBAC</span>
+              <span class="metric-label">Access Control</span>
+            </div>
+            <div class="spec-metric">
+              <span class="metric-value">2FA</span>
+              <span class="metric-label">Auth Verification</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="spec-content hidden" id="tab-governance">
+          <div class="spec-grid">
+            <div class="spec-metric">
+              <span class="metric-value">OPEN</span>
+              <span class="metric-label">Community Terms</span>
+            </div>
+            <div class="spec-metric">
+              <span class="metric-value">PUBLIC</span>
+              <span class="metric-label">Member Badges</span>
+            </div>
+            <div class="spec-metric">
+              <span class="metric-value">VERIFIED</span>
+              <span class="metric-label">Peer Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form Modal -->
+  <div class="modal-overlay hidden" id="appModal">
+    <div class="modal-card cyber-modal">
+      <button class="modal-close" id="closeModalBtn">&times;</button>
+      <h3 class="modal-title">AURA NETWORKS APPLICATION</h3>
+      <p class="modal-subtext">Complete your registration details to apply for alliance membership.</p>
+
+      <form id="membershipForm">
+        <div class="form-group">
+          <label for="applicantName">FULL NAME</label>
+          <input type="text" id="applicantName" placeholder="e.g. Alex Vance" required>
+        </div>
+
+        <div class="form-group">
+          <label for="applicantEmail">EMAIL ADDRESS</label>
+          <input type="email" id="applicantEmail" placeholder="alex@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="applicantReason">WHY DO YOU WANT TO JOIN AURA NETWORKS?</label>
+          <textarea id="applicantReason" rows="3" placeholder="Describe your goals and how you plan to contribute..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block">SUBMIT APPLICATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div class="modal-overlay hidden" id="loginModal">
+    <div class="modal-card cyber-modal">
+      <button class="modal-close" id="closeLoginModalBtn">&times;</button>
+      <h3 class="modal-title">MEMBER SIGN IN</h3>
+      <p class="modal-subtext">Access your community dashboard.</p>
+
+      <form id="portalLoginForm">
+        <div class="form-group">
+          <label for="loginMemberId">MEMBER ID</label>
+          <input type="text" id="loginMemberId" placeholder="e.g. 10042" required>
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword">PASSWORD</label>
+          <input type="password" id="loginPassword" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block">SIGN IN</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Mini Speaker Mute/Unmute Audio Widget -->
+  <div class="floating-audio-widget">
+    <audio id="bgAudio" loop src="don_srk_thame.mp3"></audio>
+    <button class="speaker-btn" id="speakerToggleBtn" title="Toggle Music Mute/Unmute">
+      <span id="speakerIcon">🔊</span>
+      <span class="speaker-pulse"></span>
+    </button>
+  </div>
 
   <script src="script.js"></script>
 </body>
