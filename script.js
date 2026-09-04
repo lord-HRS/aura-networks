@@ -29,4 +29,9 @@ specTabs.forEach(tab => {
       specTabs.forEach(t => t.classList.remove('active'));
       specContents.forEach(c => c.classList.add('hidden'));
 
-      
+   tab.classList.add('active');
+      const targetId = `tab-${tab.dataset.tab}`;
+      const targetContent = document.getElementById(targetId);
+      if (targetContent) targetContent.classList.remove('hidden');
+    });
+  });   
