@@ -24,3 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const specTabs = document.querySelectorAll('.spec-tab');
   const specContents = document.querySelectorAll('.spec-content');
 
+specTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      specTabs.forEach(t => t.classList.remove('active'));
+      specContents.forEach(c => c.classList.add('hidden'));
+
+      
