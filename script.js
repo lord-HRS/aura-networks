@@ -35,7 +35,9 @@ specTabs.forEach(tab => {
       if (targetContent) targetContent.classList.remove('hidden');
     });
   });   
-const chapterSteps = document.querySelectorAll('.chapter-step');
+  
+// Chapter Quick Nav Step Clicks
+  const chapterSteps = document.querySelectorAll('.chapter-step');
   chapterSteps.forEach(step => {
     step.addEventListener('click', () => {
       chapterSteps.forEach(s => s.classList.remove('active'));
