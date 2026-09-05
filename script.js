@@ -35,3 +35,8 @@ specTabs.forEach(tab => {
       if (targetContent) targetContent.classList.remove('hidden');
     });
   });   
+const chapterSteps = document.querySelectorAll('.chapter-step');
+  chapterSteps.forEach(step => {
+    step.addEventListener('click', () => {
+      chapterSteps.forEach(s => s.classList.remove('active'));
+      step.classList.add('active');
